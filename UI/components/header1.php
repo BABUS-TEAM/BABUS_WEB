@@ -9,7 +9,7 @@
 <html lang="zxx">
 
 <head>
-    <meta charset="UTF-8">
+<meta charset="UTF-8">
     <meta name="description" content="Yoga Studio Template">
     <meta name="keywords" content="Yoga, unica, creative, html">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
