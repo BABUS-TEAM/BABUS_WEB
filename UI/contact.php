@@ -16,30 +16,7 @@
     </div>
     <!-- Map Section End -->
 
-    <!-- Contact Section Begin -->
-    <section class="contact-section spad">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="cs-info">
-                        <h2>Contact Info</h2>
-                        <p>Babus system is avaialable at most of ticketing companies! </p>
-                        <span>Atlas road , Sheger building Office. No 255</span>
-                        <ul>
-                            <li>+251 0113 345 587</li>
-                            <li>babus@gmail.com</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="contact-add">
-                        <img src="<?php echo $imglocation; ?>contact-add.png" alt="">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Contact Section End -->
+
 
 <?php
     include("components/footer1.php");
