@@ -7,7 +7,7 @@
                     <div class="footer-widget">
                         <h4>Usefull Links</h4>
                         <ul>
-                            <li>About us</li>
+                        <li>About us</li>
                             <li>Testimonials</li>
                             <li>How it works</li>
                             <li>Create an account</li>
