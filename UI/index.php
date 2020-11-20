@@ -5,8 +5,35 @@
  include("components/header1.php");
  include("components/navigation&preloader.php");
 ?>
- <!-- App Section Begin -->
- <section class="app-section spad">
+    <!-- Hero Section Begin -->
+    <section class="hero-section set-bg" data-setbg="<?php echo $imglocation; ?>hero-bg.jpg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="hero-text">
+                        <img src="<?php echo $imglocation; ?>placeholder.png" alt="">
+                        <h1><?php echo $lang['53']; ?></h1>
+                        <form action="#" class="filter-search">
+                            <div class="category-search">
+                                <h5><?php echo $lang['54']; ?></h5>
+                                <select class="ca-search">
+                                    <option><?php echo $lang['55']; ?></option>
+                                    <option><?php echo $lang['56']; ?></option>
+                                    <option><?php echo $lang['57']; ?></option>
+                                    <option><?php echo $lang['58']; ?></option>
+                                </select>
+                            </div>
+                            <button type="submit"><?php echo $lang['59']; ?></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Hero Section End -->
+
+    <!-- App Section Begin -->
+    <section class="app-section spad">
         <div class="container">
             <div class="row">
                 <div class="col-lg-5">
@@ -79,7 +106,6 @@
     </section>
     <!-- How It Works Section End -->
 
-   
     <!-- Testimonial Section Begin -->
     <section class="testimonial-section">
         <div class="container">
