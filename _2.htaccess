@@ -1,0 +1,67 @@
+RewriteEngine On
+
+RewriteRule ^home/?$          UI/index.php      [END,NC]
+RewriteRule ^index/?$         UI/index.php      [END,NC]
+RewriteRule ^login/?$         UI/login.php      [END,NC]
+RewriteRule ^contact/?$       UI/contact.php      [END,NC]
+RewriteRule ^register/?$      UI/register.php      [END,NC]
+RewriteRule ^blog/?$          UI/blog.php      [END,NC]
+RewriteRule ^adminlogin/?$          UI/adminlogin.php      [END,NC]
+RewriteRule ^logout/?$          UI/logout.php      [END,NC] 
+RewriteRule ^vendorRegister/?$          UI/vendorRegister.php      [END,NC]
+RewriteRule ^vendorRemove/?$          UI/vendorRemove.php      [END,NC]
+
+RewriteRule ^userHome/?$          UI/userHome.php      [END,NC]
+RewriteRule ^userBuses/?$          UI/userBuses.php      [END,NC]
+
+RewriteRule ^adminHome/?$          UI/adminHome.php      [END,NC]
+RewriteRule ^adminStatus/?$          UI/adminStatus.php      [END,NC]
+
+RewriteRule ^lang/?$         config/config3.php      [END,NC]
+
+RewriteRule ^registerUser/?$    api/methods/User/register.php      [END,NC]
+RewriteRule ^rcc/?$        		api/methods/randomcode.php      [END,NC]
+RewriteRule ^loginapi/?$  		api/methods/login.php [END,NC]
+RewriteRule ^logout/?$          methods/logout.php      [END,NC]
+
+RewriteRule ^generateToken/?$   api/methods/guestHash.php      [END,NC]
+RewriteRule ^approveToken/?$   api/methods/guestHashCheck.php      [END,NC]
+
+RewriteRule ^registerAdmin/?$   api/methods/Admin/register.php      [END,NC]
+RewriteRule ^adminloginapi/?$  	api/methods/Admin/login.php [END,NC]
+
+RewriteRule ^registerBusVendor/?$  	api/methods/BusVendor/register.php [END,NC]
+RewriteRule ^listBusVendors/?$  	api/methods/BusVendor/list.php [END,NC]
+RewriteRule ^searchBusVendor/?$  	api/methods/BusVendor/search.php [END,NC]
+RewriteRule ^searchForMatchingBusVendor/?$  	api/methods/BusVendor/search2.php [END,NC]
+RewriteRule ^loginBusVendor/?$  	api/methods/BusVendor/login.php [END,NC]
+
+RewriteRule ^registerTrainVendor/?$  	api/methods/TrainVendor/register.php [END,NC]
+RewriteRule ^listTrainVendors/?$  	api/methods/TrainVendor/list.php [END,NC]
+RewriteRule ^searchTrainVendor/?$  	api/methods/TrainVendor/search.php [END,NC]
+RewriteRule ^searchForMatchingTrainVendor/?$  	api/methods/TrainVendor/search2.php [END,NC]
+RewriteRule ^loginTrainVendor/?$  	api/methods/TrainVendor/login.php [END,NC]
+
+RewriteRule ^registerBus/?$  	api/methods/Bus/register.php [END,NC]
+RewriteRule ^listBusesOfCompany/?$  	api/methods/Bus/listBusesOfCompany.php [END,NC]
+
+RewriteRule ^registerCity/?$  	api/methods/City/register.php [END,NC]
+
+RewriteRule ^registerSeat/?$  	api/methods/Seat/register.php [END,NC]
+
+RewriteRule ^registerTicket/?$  	api/methods/Ticket/register.php [END,NC]
+RewriteRule ^listTickets/?$  	api/methods/Ticket/list.php [END,NC]
+RewriteRule ^updateTicket/?$  	api/methods/Ticket/update.php [END,NC]
+
+RewriteRule ^registerTicketAvailable/?$  	api/methods/TicketAvailable/register.php [END,NC]
+RewriteRule ^listTicketsAvailable/?$  	api/methods/TicketAvailable/list.php [END,NC]
+RewriteRule ^updateTicketAvailable/?$  	api/methods/TicketAvailable/update.php [END,NC]
+
+<Files ~ "\.ini$">
+  Order allow,deny
+  Deny from all
+</Files>
+<Files ~ "\.exe$">
+  Order allow,deny
+  Deny from all
+</Files>
